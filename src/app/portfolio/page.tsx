@@ -58,7 +58,7 @@ const PortfolioPage= () => {
     transition={{duration: 1}}>
 
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">My Works</div>
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center text-black">My Works</div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }}  className="flex">
           <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
@@ -94,10 +94,10 @@ const PortfolioPage= () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">Front-end Developer and UI Designer</textPath>
+              <textPath xlinkHref="#circlePath" className="text-xl text-white">Front-end Developer and UI Designer</textPath>
             </text>
             </motion.svg>
-            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center">Hire Me</Link>
+            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300 text-white rounded-full flex items-center justify-center">Hire Me</Link>
           </div>
         </div>
       </motion.div>

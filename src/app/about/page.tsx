@@ -37,7 +37,7 @@ const AboutPage= () => {
             initial={{x:"-300px"}} 
             animate={isSkillRefInView ? {x:0} : {}} 
             transition={{ delay:0.2 }} 
-            className="font-bold text-2xl">SKILLS</motion.h1>
+            className="font-bold text-2xl text-black">SKILLS</motion.h1>
            
            {/* SKILL LIST */}
            <motion.div 
@@ -95,7 +95,7 @@ const AboutPage= () => {
             initial={{x:"-300px"}} 
             animate={isExperienceRefInView ? {x:0} : {}} 
             transition={{ delay:0.2 }} 
-            className="font-bold text-2xl">EXPERIENCE</motion.h1>
+            className="font-bold text-2xl text-black">EXPERIENCE</motion.h1>
 
             {/* EXPERIENCE LIST */}
             <motion.div className="">
@@ -106,9 +106,9 @@ const AboutPage= () => {
             {/* LEFT */}
           <div className="w-1/3 ">
             {/* JOB TITLE */}
-            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg "> Freelancer</div>
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg text-black"> Freelancer</div>
             {/* JOB DESCRIPTION */}
-            <div className="p-3 text-sm italic"> 
+            <div className="p-3 text-sm italic text-black"> 
             I create reliable and expandable web applications for potential clients.</div>
             {/* JOB DATE */}
             <div className="p-3 text-red-400 text-sm font-semibold"> 2023-present</div>
@@ -150,9 +150,9 @@ const AboutPage= () => {
             {/* RIGHT */}
             <div className="w-1/3 ">
                {/* JOB TITLE */}
-            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg"> Ancient Hold and Resources</div>
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg text-black"> Ancient Hold and Resources</div>
             {/* JOB DESCRIPTION */}
-            <div className="p-3 text-sm italic"> 
+            <div className="p-3 text-sm italic text-black"> 
              FrontEnd Developer(Intern)</div>
             {/* JOB DATE */}
             <div className="p-3 text-red-400 text-sm font-semibold"> 2021-2022</div>
