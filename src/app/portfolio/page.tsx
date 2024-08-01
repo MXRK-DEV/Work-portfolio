@@ -74,7 +74,7 @@ const PortfolioPage= () => {
               <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[300px] lg:h-[150px] xl:w-[400px] xl:h-[220px]">
                 {/* <Image src={item.img} alt="" fill/> */}   <FontAwesomeIcon icon={faJs}  width={124} height={124} className="fa-10x" /> 
               </div>
-              <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
+              <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px] font-semibold">{item.desc}</p>
               <Link href={item.link} className="flex justify-end"><button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button></Link>
             </div>
           </div>
@@ -82,13 +82,13 @@ const PortfolioPage= () => {
         </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-red-100 to-blue-300">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-pink-100 to-blue-300">
           <h1 className="text-8xl">Do you have a project?</h1>
           <div className="relative">
             <motion.svg
             animate={{rotate:360}}
             transition={{duration:8, ease:"linear", repeat:Infinity}}
-            viewBox="0 0 300 300" className="w-64 h-64  md:w-[500px] md:h-[500px]">
+            viewBox="0 0 300 300" className="w-64 h-64  md:w-[500px] md:h-[500px] ">
             <defs>
               <path
                 id="circlePath"
@@ -99,7 +99,7 @@ const PortfolioPage= () => {
               <textPath xlinkHref="#circlePath" className="text-xl text-white">Front-end Developer and UI Designer</textPath>
             </text>
             </motion.svg>
-            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300  rounded-full flex items-center justify-center text-black text-3xl">Hire Me</Link>
+            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300  rounded-full flex items-center justify-center text-white text-3xl">Hire Me</Link>
           </div>
         </div>
       </motion.div>
