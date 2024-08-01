@@ -2,43 +2,45 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react"
+import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { faJs } from '@fortawesome/free-brands-svg-icons';
 
 
 const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Whatsapp-Clone",
+    desc: "A full-stack WhatsApp-clone with UI-design and components from REACT, authentication with CLERK AUTH, backend and JS-powered database with core features such as creating conversations sending messages images/video with CONVEX and also integration of project with open-ai. Finally we add video calling with screen sharing.",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     
-    link: "https://lama.dev",
+    link: "https://whatsapp-clone-jrv3.onrender.com",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Fitness-Record",
+    desc: "A full-stack MERN application which allows us keep progress of our gym fitness journey and was developed using React for the front end, Express and Node.js for the backend, and mongoDB for the database. Redux is also used, which helps us resolve state transfer issues.",
    
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    link: "https://fitness-record-iev9.onrender.com",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Posts-Application",
+    desc: "A full-stack MERN application which allows us create,delete and update posts and was developed using React for the front end, Express and Node.js for the backend, and mongoDB for the database. Redux is also used, which helps us resolve state transfer issues.",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    link: "https://posts-application.onrender.com",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "TODO-App",
+    desc: "A simple TODO mobile application created with REACT-NATIVE which allows us create a todo list update it and also delete it when not needed.",
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    link: "https://myproject-ecru-nine.vercel.app/",
   },
 ];
 
@@ -69,8 +71,8 @@ const PortfolioPage= () => {
             <div className="flex flex-col gap-8 text-white  bg-green-300">
               
               <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">{item.title}</h1>
-              <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                <Image src={item.img} alt="" fill/>
+              <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[300px] lg:h-[150px] xl:w-[400px] xl:h-[220px]">
+                {/* <Image src={item.img} alt="" fill/> */}   <FontAwesomeIcon icon={faJs}  width={124} height={124} className="fa-10x" /> 
               </div>
               <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">{item.desc}</p>
               <Link href={item.link} className="flex justify-end"><button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button></Link>
@@ -80,7 +82,7 @@ const PortfolioPage= () => {
         </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-red-100 to-blue-300">
           <h1 className="text-8xl">Do you have a project?</h1>
           <div className="relative">
             <motion.svg
@@ -97,7 +99,7 @@ const PortfolioPage= () => {
               <textPath xlinkHref="#circlePath" className="text-xl text-white">Front-end Developer and UI Designer</textPath>
             </text>
             </motion.svg>
-            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300 text-white rounded-full flex items-center justify-center">Hire Me</Link>
+            <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300  rounded-full flex items-center justify-center text-black text-3xl">Hire Me</Link>
           </div>
         </div>
       </motion.div>

@@ -5,6 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+
+// import your icons
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 const links = [
     { url:"/", title: "Home" },
@@ -95,14 +103,14 @@ const Navbar = () => {
             
             {/* SOCIAL */}
             <div className="hidden md:flex gap-4 w-1/3">
-                <Link href="https://github.com/MXRK-DEV">
-                <Image src="/github.png" alt="" width={24} height={24} />
+                <Link href="https://github.com/MXRK-DEV"> 
+                <FontAwesomeIcon icon={faGithub}  alt="github" width={24} height={24} />
                 </Link>
                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=damark215@gmail.com&su=&body=..">
-                <Image src="/gmail.png.png" alt="" width={34} height={34} />
+                <FontAwesomeIcon icon={faEnvelope}  width={34} height={34} />
                 </Link>
-                <Link href="https://www.linkedin.com/in/mark-ifeoluwa-49a686225/">
-                <Image src="/linkedin.png" alt="" width={24} height={24} />
+                <Link href="www.linkedin.com/in/mark-ifeoluwa-49a686225">
+                <FontAwesomeIcon icon={faLinkedin} alt="" width={24} height={24} />
                 </Link>
             </div>
             
