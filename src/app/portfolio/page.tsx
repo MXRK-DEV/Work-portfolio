@@ -96,7 +96,7 @@ const PortfolioPage= () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl text-white">Front-end Developer and UI Designer</textPath>
+              <textPath xlinkHref="#circlePath" className="text-xl text-white">Full-stack Developer and  Designer</textPath>
             </text>
             </motion.svg>
             <Link href="/contact" className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-green-300  rounded-full flex items-center justify-center text-white text-3xl">Hire Me</Link>
